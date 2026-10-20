@@ -1,0 +1,7 @@
+class,rows,ratio_pct
+Normal,113018,57.7982
+ARP Flood,36120,18.472
+ICMP Flood,35540,18.1754
+SYN Flood,7064,3.6126
+UDP Flood,2487,1.2719
+DNS Amplification,1310,0.6699

@@ -1,0 +1,441 @@
+# eBPF Verifier Results -- Thu Oct 15 04:42:43 PM UTC 2026
+# Method: bpftool -d prog load (kernel.org/doc/html/latest/bpf/verifier.html)
+# clang : Ubuntu clang version 18.1.3 (1ubuntu1)
+# kernel: 6.8.0-142-generic
+# flags : -O2 -fno-builtin-memset -target bpf -D__TARGET_ARCH_x86 -I/usr/include/x86_64-linux-gnu -DN_FEATURES=9
+
+dt_a_d01 : PASS : insn=51 processed=84 states=6
+dt_a_d02 : PASS : insn=63 processed=123 states=9
+dt_a_d03 : PASS : insn=17 processed=18 states=1
+dt_a_d04 : PASS : insn=90 processed=325 states=30
+dt_a_d05 : PASS : insn=96 processed=312 states=29
+dt_a_d06 : PASS : insn=107 processed=415 states=39
+dt_a_d07 : PASS : insn=105 processed=356 states=32
+dt_a_d08 : PASS : insn=105 processed=356 states=32
+dt_a_d09 : PASS : insn=105 processed=356 states=32
+dt_a_d10 : PASS : insn=105 processed=356 states=32
+dt_a_d11 : PASS : insn=105 processed=356 states=32
+dt_a_d12 : PASS : insn=105 processed=356 states=32
+dt_a_d13 : PASS : insn=105 processed=356 states=32
+dt_a_d14 : PASS : insn=105 processed=356 states=32
+dt_a_d15 : PASS : insn=105 processed=356 states=32
+dt_a_d16 : PASS : insn=105 processed=356 states=32
+dt_a_d17 : PASS : insn=105 processed=356 states=32
+dt_a_d18 : PASS : insn=105 processed=356 states=32
+dt_a_d19 : PASS : insn=105 processed=356 states=32
+dt_a_d20 : PASS : insn=105 processed=356 states=32
+dt_a_d21 : PASS : insn=105 processed=356 states=32
+dt_a_d22 : PASS : insn=105 processed=356 states=32
+dt_a_d23 : PASS : insn=105 processed=356 states=32
+dt_a_d24 : PASS : insn=105 processed=356 states=32
+dt_a_d25 : PASS : insn=105 processed=356 states=32
+dt_a_d26 : PASS : insn=105 processed=356 states=32
+dt_a_d27 : PASS : insn=105 processed=356 states=32
+dt_a_d28 : PASS : insn=105 processed=356 states=32
+dt_a_d29 : PASS : insn=105 processed=356 states=32
+dt_a_d30 : PASS : insn=105 processed=356 states=32
+dt_bS1_d01 : VERIFIER_FAIL : stack-limit processed=25 why=R3 bitwise operator |= on pointer prohibited
+dt_bS1_d02 : PASS : insn=66 processed=186 states=15
+dt_bS1_d03 : PASS : insn=69 processed=178 states=14
+dt_bS1_d04 : PASS : insn=93 processed=305 states=28
+dt_bS1_d05 : PASS : insn=98 processed=348 states=31
+dt_bS1_d06 : PASS : insn=102 processed=403 states=34
+dt_bS1_d07 : PASS : insn=102 processed=403 states=34
+dt_bS1_d08 : PASS : insn=102 processed=403 states=34
+dt_bS1_d09 : PASS : insn=102 processed=403 states=34
+dt_bS1_d10 : PASS : insn=102 processed=403 states=34
+dt_bS1_d11 : PASS : insn=102 processed=403 states=34
+dt_bS1_d12 : PASS : insn=102 processed=403 states=34
+dt_bS1_d13 : PASS : insn=102 processed=403 states=34
+dt_bS1_d14 : PASS : insn=102 processed=403 states=34
+dt_bS1_d15 : PASS : insn=102 processed=403 states=34
+dt_bS1_d16 : PASS : insn=102 processed=403 states=34
+dt_bS1_d17 : PASS : insn=102 processed=403 states=34
+dt_bS1_d18 : PASS : insn=102 processed=403 states=34
+dt_bS1_d19 : PASS : insn=102 processed=403 states=34
+dt_bS1_d20 : PASS : insn=102 processed=403 states=34
+dt_bS1_d21 : PASS : insn=102 processed=403 states=34
+dt_bS1_d22 : PASS : insn=102 processed=403 states=34
+dt_bS1_d23 : PASS : insn=102 processed=403 states=34
+dt_bS1_d24 : PASS : insn=102 processed=403 states=34
+dt_bS1_d25 : PASS : insn=102 processed=403 states=34
+dt_bS1_d26 : PASS : insn=102 processed=403 states=34
+dt_bS1_d27 : PASS : insn=102 processed=403 states=34
+dt_bS1_d28 : PASS : insn=102 processed=403 states=34
+dt_bS1_d29 : PASS : insn=102 processed=403 states=34
+dt_bS1_d30 : PASS : insn=102 processed=403 states=34
+dt_bS2_d01 : VERIFIER_FAIL : stack-limit processed=25 why=R3 bitwise operator |= on pointer prohibited
+dt_bS2_d02 : PASS : insn=66 processed=186 states=15
+dt_bS2_d03 : PASS : insn=84 processed=265 states=24
+dt_bS2_d04 : PASS : insn=93 processed=305 states=28
+dt_bS2_d05 : PASS : insn=98 processed=334 states=29
+dt_bS2_d06 : PASS : insn=100 processed=431 states=37
+dt_bS2_d07 : PASS : insn=100 processed=431 states=37
+dt_bS2_d08 : PASS : insn=100 processed=431 states=37
+dt_bS2_d09 : PASS : insn=100 processed=431 states=37
+dt_bS2_d10 : PASS : insn=100 processed=431 states=37
+dt_bS2_d11 : PASS : insn=100 processed=431 states=37
+dt_bS2_d12 : PASS : insn=100 processed=431 states=37
+dt_bS2_d13 : PASS : insn=100 processed=431 states=37
+dt_bS2_d14 : PASS : insn=100 processed=431 states=37
+dt_bS2_d15 : PASS : insn=100 processed=431 states=37
+dt_bS2_d16 : PASS : insn=100 processed=431 states=37
+dt_bS2_d17 : PASS : insn=100 processed=431 states=37
+dt_bS2_d18 : PASS : insn=100 processed=431 states=37
+dt_bS2_d19 : PASS : insn=100 processed=431 states=37
+dt_bS2_d20 : PASS : insn=100 processed=431 states=37
+dt_bS2_d21 : PASS : insn=100 processed=431 states=37
+dt_bS2_d22 : PASS : insn=100 processed=431 states=37
+dt_bS2_d23 : PASS : insn=100 processed=431 states=37
+dt_bS2_d24 : PASS : insn=100 processed=431 states=37
+dt_bS2_d25 : PASS : insn=100 processed=431 states=37
+dt_bS2_d26 : PASS : insn=100 processed=431 states=37
+dt_bS2_d27 : PASS : insn=100 processed=431 states=37
+dt_bS2_d28 : PASS : insn=100 processed=431 states=37
+dt_bS2_d29 : PASS : insn=100 processed=431 states=37
+dt_bS2_d30 : PASS : insn=100 processed=431 states=37
+dt_bS3_d01 : VERIFIER_FAIL : stack-limit processed=25 why=R3 bitwise operator |= on pointer prohibited
+dt_bS3_d02 : PASS : insn=66 processed=186 states=15
+dt_bS3_d03 : PASS : insn=84 processed=292 states=28
+dt_bS3_d04 : PASS : insn=89 processed=340 states=31
+dt_bS3_d05 : PASS : insn=93 processed=367 states=33
+dt_bS3_d06 : PASS : insn=103 processed=419 states=38
+dt_bS3_d07 : PASS : insn=104 processed=404 states=34
+dt_bS3_d08 : PASS : insn=104 processed=404 states=34
+dt_bS3_d09 : PASS : insn=104 processed=404 states=34
+dt_bS3_d10 : PASS : insn=104 processed=404 states=34
+dt_bS3_d11 : PASS : insn=104 processed=404 states=34
+dt_bS3_d12 : PASS : insn=104 processed=404 states=34
+dt_bS3_d13 : PASS : insn=104 processed=404 states=34
+dt_bS3_d14 : PASS : insn=104 processed=404 states=34
+dt_bS3_d15 : PASS : insn=104 processed=404 states=34
+dt_bS3_d16 : PASS : insn=104 processed=404 states=34
+dt_bS3_d17 : PASS : insn=104 processed=404 states=34
+dt_bS3_d18 : PASS : insn=104 processed=404 states=34
+dt_bS3_d19 : PASS : insn=104 processed=404 states=34
+dt_bS3_d20 : PASS : insn=104 processed=404 states=34
+dt_bS3_d21 : PASS : insn=104 processed=404 states=34
+dt_bS3_d22 : PASS : insn=104 processed=404 states=34
+dt_bS3_d23 : PASS : insn=104 processed=404 states=34
+dt_bS3_d24 : PASS : insn=104 processed=404 states=34
+dt_bS3_d25 : PASS : insn=104 processed=404 states=34
+dt_bS3_d26 : PASS : insn=104 processed=404 states=34
+dt_bS3_d27 : PASS : insn=104 processed=404 states=34
+dt_bS3_d28 : PASS : insn=104 processed=404 states=34
+dt_bS3_d29 : PASS : insn=104 processed=404 states=34
+dt_bS3_d30 : PASS : insn=104 processed=404 states=34
+dt_cS1_d01 : PASS : insn=17 processed=18 states=1
+dt_cS1_d02 : PASS : insn=17 processed=18 states=1
+dt_cS1_d03 : PASS : insn=17 processed=18 states=1
+dt_cS1_d04 : PASS : insn=86 processed=326 states=31
+dt_cS1_d05 : PASS : insn=91 processed=348 states=32
+dt_cS1_d06 : PASS : insn=106 processed=442 states=41
+dt_cS1_d07 : PASS : insn=106 processed=373 states=34
+dt_cS1_d08 : PASS : insn=106 processed=373 states=34
+dt_cS1_d09 : PASS : insn=106 processed=373 states=34
+dt_cS1_d10 : PASS : insn=106 processed=373 states=34
+dt_cS1_d11 : PASS : insn=106 processed=373 states=34
+dt_cS1_d12 : PASS : insn=106 processed=373 states=34
+dt_cS1_d13 : PASS : insn=106 processed=373 states=34
+dt_cS1_d14 : PASS : insn=106 processed=373 states=34
+dt_cS1_d15 : PASS : insn=106 processed=373 states=34
+dt_cS1_d16 : PASS : insn=106 processed=373 states=34
+dt_cS1_d17 : PASS : insn=106 processed=373 states=34
+dt_cS1_d18 : PASS : insn=106 processed=373 states=34
+dt_cS1_d19 : PASS : insn=106 processed=373 states=34
+dt_cS1_d20 : PASS : insn=106 processed=373 states=34
+dt_cS1_d21 : PASS : insn=106 processed=373 states=34
+dt_cS1_d22 : PASS : insn=106 processed=373 states=34
+dt_cS1_d23 : PASS : insn=106 processed=373 states=34
+dt_cS1_d24 : PASS : insn=106 processed=373 states=34
+dt_cS1_d25 : PASS : insn=106 processed=373 states=34
+dt_cS1_d26 : PASS : insn=106 processed=373 states=34
+dt_cS1_d27 : PASS : insn=106 processed=373 states=34
+dt_cS1_d28 : PASS : insn=106 processed=373 states=34
+dt_cS1_d29 : PASS : insn=106 processed=373 states=34
+dt_cS1_d30 : PASS : insn=106 processed=373 states=34
+dt_cS2_d01 : PASS : insn=17 processed=18 states=1
+dt_cS2_d02 : PASS : insn=17 processed=18 states=1
+dt_cS2_d03 : PASS : insn=17 processed=18 states=1
+dt_cS2_d04 : PASS : insn=86 processed=326 states=31
+dt_cS2_d05 : PASS : insn=95 processed=381 states=34
+dt_cS2_d06 : PASS : insn=103 processed=414 states=37
+dt_cS2_d07 : PASS : insn=109 processed=449 states=42
+dt_cS2_d08 : PASS : insn=109 processed=449 states=42
+dt_cS2_d09 : PASS : insn=109 processed=449 states=42
+dt_cS2_d10 : PASS : insn=109 processed=449 states=42
+dt_cS2_d11 : PASS : insn=109 processed=449 states=42
+dt_cS2_d12 : PASS : insn=109 processed=449 states=42
+dt_cS2_d13 : PASS : insn=109 processed=449 states=42
+dt_cS2_d14 : PASS : insn=109 processed=449 states=42
+dt_cS2_d15 : PASS : insn=109 processed=449 states=42
+dt_cS2_d16 : PASS : insn=109 processed=449 states=42
+dt_cS2_d17 : PASS : insn=109 processed=449 states=42
+dt_cS2_d18 : PASS : insn=109 processed=449 states=42
+dt_cS2_d19 : PASS : insn=109 processed=449 states=42
+dt_cS2_d20 : PASS : insn=109 processed=449 states=42
+dt_cS2_d21 : PASS : insn=109 processed=449 states=42
+dt_cS2_d22 : PASS : insn=109 processed=449 states=42
+dt_cS2_d23 : PASS : insn=109 processed=449 states=42
+dt_cS2_d24 : PASS : insn=109 processed=449 states=42
+dt_cS2_d25 : PASS : insn=109 processed=449 states=42
+dt_cS2_d26 : PASS : insn=109 processed=449 states=42
+dt_cS2_d27 : PASS : insn=109 processed=449 states=42
+dt_cS2_d28 : PASS : insn=109 processed=449 states=42
+dt_cS2_d29 : PASS : insn=109 processed=449 states=42
+dt_cS2_d30 : PASS : insn=109 processed=449 states=42
+dt_cS3_d01 : PASS : insn=17 processed=18 states=1
+dt_cS3_d02 : PASS : insn=17 processed=18 states=1
+dt_cS3_d03 : PASS : insn=17 processed=18 states=1
+dt_cS3_d04 : PASS : insn=85 processed=307 states=29
+dt_cS3_d05 : PASS : insn=90 processed=318 states=28
+dt_cS3_d06 : PASS : insn=99 processed=376 states=34
+dt_cS3_d07 : PASS : insn=99 processed=376 states=34
+dt_cS3_d08 : PASS : insn=99 processed=376 states=34
+dt_cS3_d09 : PASS : insn=99 processed=376 states=34
+dt_cS3_d10 : PASS : insn=99 processed=376 states=34
+dt_cS3_d11 : PASS : insn=99 processed=376 states=34
+dt_cS3_d12 : PASS : insn=99 processed=376 states=34
+dt_cS3_d13 : PASS : insn=99 processed=376 states=34
+dt_cS3_d14 : PASS : insn=99 processed=376 states=34
+dt_cS3_d15 : PASS : insn=99 processed=376 states=34
+dt_cS3_d16 : PASS : insn=99 processed=376 states=34
+dt_cS3_d17 : PASS : insn=99 processed=376 states=34
+dt_cS3_d18 : PASS : insn=99 processed=376 states=34
+dt_cS3_d19 : PASS : insn=99 processed=376 states=34
+dt_cS3_d20 : PASS : insn=99 processed=376 states=34
+dt_cS3_d21 : PASS : insn=99 processed=376 states=34
+dt_cS3_d22 : PASS : insn=99 processed=376 states=34
+dt_cS3_d23 : PASS : insn=99 processed=376 states=34
+dt_cS3_d24 : PASS : insn=99 processed=376 states=34
+dt_cS3_d25 : PASS : insn=99 processed=376 states=34
+dt_cS3_d26 : PASS : insn=99 processed=376 states=34
+dt_cS3_d27 : PASS : insn=99 processed=376 states=34
+dt_cS3_d28 : PASS : insn=99 processed=376 states=34
+dt_cS3_d29 : PASS : insn=99 processed=376 states=34
+dt_cS3_d30 : PASS : insn=99 processed=376 states=34
+rf_a_d3n10 : PASS : insn=300 processed=48440 states=3257
+rf_a_d5n10 : VERIFIER_FAIL : stack-limit processed=191 why=R0 bitwise operator |= on pointer prohibited
+rf_a_d7n10 : VERIFIER_FAIL : stack-limit processed=14631 why=R3 bitwise operator |= on pointer prohibited
+rf_a_d8n1 : PASS : insn=96 processed=351 states=33
+rf_a_d8n3 : PASS : insn=193 processed=4180 states=285
+rf_a_d8n5 : PASS : insn=262 processed=23588 states=1801
+rf_a_d8n10 : VERIFIER_FAIL : stack-limit processed=227 why=R3 bitwise operator |= on pointer prohibited
+rf_a_d8n20 : VERIFIER_FAIL : stack-limit processed=220 why=R3 bitwise operator |= on pointer prohibited
+rf_a_d8n30 : VERIFIER_FAIL : stack-limit processed=228 why=R5 bitwise operator |= on pointer prohibited
+rf_a_d9n10 : VERIFIER_FAIL : stack-limit processed=238 why=R0 bitwise operator |= on pointer prohibited
+rf_a_d10n10 : VERIFIER_FAIL : stack-limit processed=231 why=R0 bitwise operator |= on pointer prohibited
+rf_a_d12n10 : VERIFIER_FAIL : stack-limit processed=231 why=R0 bitwise operator |= on pointer prohibited
+rf_a_d15n10 : VERIFIER_FAIL : stack-limit processed=231 why=R0 bitwise operator |= on pointer prohibited
+rf_a_d15n20 : VERIFIER_FAIL : stack-limit processed=236 why=R2 bitwise operator |= on pointer prohibited
+rf_a_d15n50 : VERIFIER_FAIL : stack-limit processed=241 why=R6 bitwise operator |= on pointer prohibited
+rf_a_d20n20 : VERIFIER_FAIL : stack-limit processed=236 why=R2 bitwise operator |= on pointer prohibited
+rf_a_d20n50 : VERIFIER_FAIL : stack-limit processed=241 why=R6 bitwise operator |= on pointer prohibited
+rf_a_d25n50 : VERIFIER_FAIL : stack-limit processed=241 why=R6 bitwise operator |= on pointer prohibited
+rf_a_d30n100 : VERIFIER_FAIL : stack-limit processed=254 why=R4 bitwise operator |= on pointer prohibited
+rf_bS1_d3n10 : VERIFIER_FAIL : stack-limit processed=23357 why=R1 bitwise operator |= on pointer prohibited
+rf_bS1_d5n10 : VERIFIER_FAIL : stack-limit processed=68228 why=R3 bitwise operator |= on pointer prohibited
+rf_bS1_d7n10 : VERIFIER_FAIL : stack-limit processed=192463 why=R5 bitwise operator |= on pointer prohibited
+rf_bS1_d8n1 : PASS : insn=124 processed=411 states=33
+rf_bS1_d8n3 : PASS : insn=222 processed=6271 states=442
+rf_bS1_d8n5 : PASS : insn=343 processed=49577 states=3408
+rf_bS1_d8n10 : VERIFIER_FAIL : stack-limit processed=255222 why=R5 bitwise operator |= on pointer prohibited
+rf_bS1_d8n20 : VERIFIER_FAIL : stack-limit processed=198 why=R5 bitwise operator |= on pointer prohibited
+rf_bS1_d8n30 : VERIFIER_FAIL : stack-limit processed=200 why=R5 bitwise operator |= on pointer prohibited
+rf_bS1_d9n10 : VERIFIER_FAIL : stack-limit processed=372577 why=R6 bitwise operator |= on pointer prohibited
+rf_bS1_d10n10 : VERIFIER_FAIL : stack-limit processed=229394 why=R5 bitwise operator |= on pointer prohibited
+rf_bS1_d12n10 : VERIFIER_FAIL : stack-limit processed=199272 why=R6 bitwise operator |= on pointer prohibited
+rf_bS1_d15n10 : VERIFIER_FAIL : stack-limit processed=199272 why=R6 bitwise operator |= on pointer prohibited
+rf_bS1_d15n20 : VERIFIER_FAIL : stack-limit processed=214 why=R4 bitwise operator |= on pointer prohibited
+rf_bS1_d15n50 : VERIFIER_FAIL : stack-limit processed=208 why=R3 bitwise operator |= on pointer prohibited
+rf_bS1_d20n20 : VERIFIER_FAIL : stack-limit processed=214 why=R4 bitwise operator |= on pointer prohibited
+rf_bS1_d20n50 : VERIFIER_FAIL : stack-limit processed=208 why=R3 bitwise operator |= on pointer prohibited
+rf_bS1_d25n50 : VERIFIER_FAIL : stack-limit processed=208 why=R3 bitwise operator |= on pointer prohibited
+rf_bS1_d30n100 : VERIFIER_FAIL : stack-limit processed=214 why=R5 bitwise operator |= on pointer prohibited
+rf_bS2_d3n10 : VERIFIER_FAIL : stack-limit processed=4905 why=R1 bitwise operator |= on pointer prohibited
+rf_bS2_d5n10 : VERIFIER_FAIL : stack-limit processed=104882 why=R2 bitwise operator |= on pointer prohibited
+rf_bS2_d7n10 : VERIFIER_FAIL : stack-limit processed=63858 why=R9 bitwise operator |= on pointer prohibited
+rf_bS2_d8n1 : PASS : insn=112 processed=390 states=33
+rf_bS2_d8n3 : PASS : insn=213 processed=5394 states=360
+rf_bS2_d8n5 : VERIFIER_FAIL : stack-limit processed=3759 why=R3 bitwise operator |= on pointer prohibited
+rf_bS2_d8n10 : VERIFIER_FAIL : stack-limit processed=92432 why=R6 bitwise operator |= on pointer prohibited
+rf_bS2_d8n20 : VERIFIER_FAIL : stack-limit processed=32325 why=R8 bitwise operator |= on pointer prohibited
+rf_bS2_d8n30 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS2_d9n10 : VERIFIER_FAIL : stack-limit processed=105880 why=R0 bitwise operator |= on pointer prohibited
+rf_bS2_d10n10 : VERIFIER_FAIL : stack-limit processed=73573 why=R0 bitwise operator |= on pointer prohibited
+rf_bS2_d12n10 : VERIFIER_FAIL : stack-limit processed=73573 why=R0 bitwise operator |= on pointer prohibited
+rf_bS2_d15n10 : VERIFIER_FAIL : stack-limit processed=73573 why=R0 bitwise operator |= on pointer prohibited
+rf_bS2_d15n20 : VERIFIER_FAIL : stack-limit processed=74338 why=R4 bitwise operator |= on pointer prohibited
+rf_bS2_d15n50 : VERIFIER_FAIL : stack-limit processed=678 why=R5 bitwise operator |= on pointer prohibited
+rf_bS2_d20n20 : VERIFIER_FAIL : stack-limit processed=74338 why=R4 bitwise operator |= on pointer prohibited
+rf_bS2_d20n50 : VERIFIER_FAIL : stack-limit processed=678 why=R5 bitwise operator |= on pointer prohibited
+rf_bS2_d25n50 : VERIFIER_FAIL : stack-limit processed=678 why=R5 bitwise operator |= on pointer prohibited
+rf_bS2_d30n100 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d3n10 : VERIFIER_FAIL : stack-limit processed=11849 why=R0 bitwise operator |= on pointer prohibited
+rf_bS3_d5n10 : VERIFIER_FAIL : stack-limit processed=109880 why=R6 bitwise operator |= on pointer prohibited
+rf_bS3_d7n10 : VERIFIER_FAIL : stack-limit processed=359669 why=R5 bitwise operator |= on pointer prohibited
+rf_bS3_d8n1 : PASS : insn=130 processed=422 states=36
+rf_bS3_d8n3 : PASS : insn=210 processed=4193 states=242
+rf_bS3_d8n5 : VERIFIER_FAIL : stack-limit processed=851 why=R4 bitwise operator |= on pointer prohibited
+rf_bS3_d8n10 : VERIFIER_FAIL : stack-limit processed=345311 why=R5 bitwise operator |= on pointer prohibited
+rf_bS3_d8n20 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d8n30 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d9n10 : VERIFIER_FAIL : stack-limit processed=429377 why=R5 bitwise operator |= on pointer prohibited
+rf_bS3_d10n10 : VERIFIER_FAIL : stack-limit processed=429377 why=R5 bitwise operator |= on pointer prohibited
+rf_bS3_d12n10 : VERIFIER_FAIL : stack-limit processed=429377 why=R5 bitwise operator |= on pointer prohibited
+rf_bS3_d15n10 : VERIFIER_FAIL : stack-limit processed=429377 why=R5 bitwise operator |= on pointer prohibited
+rf_bS3_d15n20 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d15n50 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d20n20 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d20n50 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d25n50 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_bS3_d30n100 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_cS1_d3n10 : VERIFIER_FAIL : stack-limit processed=143 why=R1 bitwise operator |= on pointer prohibited
+rf_cS1_d5n10 : VERIFIER_FAIL : stack-limit processed=160 why=R1 bitwise operator |= on pointer prohibited
+rf_cS1_d7n10 : VERIFIER_FAIL : stack-limit processed=183 why=R0 bitwise operator |= on pointer prohibited
+rf_cS1_d8n1 : PASS : insn=114 processed=407 states=35
+rf_cS1_d8n3 : PASS : insn=190 processed=3488 states=235
+rf_cS1_d8n5 : PASS : insn=258 processed=23775 states=1710
+rf_cS1_d8n10 : VERIFIER_FAIL : stack-limit processed=189 why=R1 bitwise operator |= on pointer prohibited
+rf_cS1_d8n20 : VERIFIER_FAIL : stack-limit processed=186 why=R2 bitwise operator |= on pointer prohibited
+rf_cS1_d8n30 : VERIFIER_FAIL : stack-limit processed=205 why=R0 bitwise operator |= on pointer prohibited
+rf_cS1_d9n10 : VERIFIER_FAIL : stack-limit processed=191 why=R1 bitwise operator |= on pointer prohibited
+rf_cS1_d10n10 : VERIFIER_FAIL : stack-limit processed=191 why=R1 bitwise operator |= on pointer prohibited
+rf_cS1_d12n10 : VERIFIER_FAIL : stack-limit processed=191 why=R1 bitwise operator |= on pointer prohibited
+rf_cS1_d15n10 : VERIFIER_FAIL : stack-limit processed=191 why=R1 bitwise operator |= on pointer prohibited
+rf_cS1_d15n20 : VERIFIER_FAIL : stack-limit processed=169 why=R3 bitwise operator |= on pointer prohibited
+rf_cS1_d15n50 : VERIFIER_FAIL : stack-limit processed=182 why=R2 bitwise operator |= on pointer prohibited
+rf_cS1_d20n20 : VERIFIER_FAIL : stack-limit processed=169 why=R3 bitwise operator |= on pointer prohibited
+rf_cS1_d20n50 : VERIFIER_FAIL : stack-limit processed=182 why=R2 bitwise operator |= on pointer prohibited
+rf_cS1_d25n50 : VERIFIER_FAIL : stack-limit processed=182 why=R2 bitwise operator |= on pointer prohibited
+rf_cS1_d30n100 : VERIFIER_FAIL : stack-limit processed=198 why=R0 bitwise operator |= on pointer prohibited
+rf_cS2_d3n10 : PASS : insn=289 processed=54000 states=4045
+rf_cS2_d5n10 : PASS : insn=424 processed=599444 states=46584
+rf_cS2_d7n10 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+rf_cS2_d8n1 : PASS : insn=108 processed=416 states=37
+rf_cS2_d8n3 : PASS : insn=204 processed=5152 states=325
+rf_cS2_d8n5 : PASS : insn=293 processed=25126 states=1933
+rf_cS2_d8n10 : VERIFIER_FAIL : stack-limit processed=24894 why=R4 bitwise operator |= on pointer prohibited
+rf_cS2_d8n20 : VERIFIER_FAIL : stack-limit processed=914 why=R6 bitwise operator |= on pointer prohibited
+rf_cS2_d8n30 : VERIFIER_FAIL : stack-limit processed=478 why=R7 bitwise operator |= on pointer prohibited
+rf_cS2_d9n10 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+rf_cS2_d10n10 : VERIFIER_FAIL : stack-limit processed=2515 why=R4 bitwise operator |= on pointer prohibited
+rf_cS2_d12n10 : VERIFIER_FAIL : stack-limit processed=2515 why=R4 bitwise operator |= on pointer prohibited
+rf_cS2_d15n10 : VERIFIER_FAIL : stack-limit processed=2515 why=R4 bitwise operator |= on pointer prohibited
+rf_cS2_d15n20 : VERIFIER_FAIL : stack-limit processed=714 why=R4 bitwise operator |= on pointer prohibited
+rf_cS2_d15n50 : VERIFIER_FAIL : stack-limit processed=294 why=R1 bitwise operator |= on pointer prohibited
+rf_cS2_d20n20 : VERIFIER_FAIL : stack-limit processed=714 why=R4 bitwise operator |= on pointer prohibited
+rf_cS2_d20n50 : VERIFIER_FAIL : stack-limit processed=294 why=R1 bitwise operator |= on pointer prohibited
+rf_cS2_d25n50 : VERIFIER_FAIL : stack-limit processed=294 why=R1 bitwise operator |= on pointer prohibited
+rf_cS2_d30n100 : VERIFIER_FAIL : stack-limit processed=979 why=R5 bitwise operator |= on pointer prohibited
+rf_cS3_d3n10 : PASS : insn=302 processed=49748 states=3685
+rf_cS3_d5n10 : PASS : insn=428 processed=407488 states=31898
+rf_cS3_d7n10 : VERIFIER_FAIL : unknown processed=NA why=Error; failed to load object file
+rf_cS3_d8n1 : PASS : insn=96 processed=351 states=33
+rf_cS3_d8n3 : PASS : insn=163 processed=3342 states=251
+rf_cS3_d8n5 : PASS : insn=283 processed=10323 states=747
+rf_cS3_d8n10 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+rf_cS3_d8n20 : VERIFIER_FAIL : stack-limit processed=256 why=R0 bitwise operator |= on pointer prohibited
+rf_cS3_d8n30 : VERIFIER_FAIL : stack-limit processed=254 why=R0 bitwise operator |= on pointer prohibited
+rf_cS3_d9n10 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+rf_cS3_d10n10 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+rf_cS3_d12n10 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+rf_cS3_d15n10 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+rf_cS3_d15n20 : VERIFIER_FAIL : stack-limit processed=255 why=R7 bitwise operator |= on pointer prohibited
+rf_cS3_d15n50 : VERIFIER_FAIL : stack-limit processed=284 why=R5 bitwise operator |= on pointer prohibited
+rf_cS3_d20n20 : VERIFIER_FAIL : stack-limit processed=255 why=R7 bitwise operator |= on pointer prohibited
+rf_cS3_d20n50 : VERIFIER_FAIL : stack-limit processed=284 why=R5 bitwise operator |= on pointer prohibited
+rf_cS3_d25n50 : VERIFIER_FAIL : stack-limit processed=284 why=R5 bitwise operator |= on pointer prohibited
+rf_cS3_d30n100 : VERIFIER_FAIL : stack-limit processed=244 why=R6 bitwise operator |= on pointer prohibited
+mlp_a_2 : PASS : insn=224 processed=382 states=14
+mlp_a_2x2 : PASS : insn=241 processed=440 states=21
+mlp_a_4 : PASS : insn=323 processed=1464 states=35
+mlp_a_4x4 : PASS : insn=363 processed=1513 states=33
+mlp_a_8 : PASS : insn=419 processed=2772 states=34
+mlp_a_8x8 : PASS : insn=495 processed=189424 states=1751
+mlp_a_16 : PASS : insn=338 processed=7139 states=80
+mlp_a_16x16 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+mlp_a_16x16x16 : PASS : insn=480 processed=115170 states=1446
+mlp_a_32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_a_32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_a_32x32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_a_64x64x64x64 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS1_2 : PASS : insn=224 processed=382 states=14
+mlp_bS1_2x2 : PASS : insn=241 processed=441 states=21
+mlp_bS1_4 : PASS : insn=323 processed=1464 states=35
+mlp_bS1_4x4 : PASS : insn=363 processed=1512 states=33
+mlp_bS1_8 : PASS : insn=419 processed=2652 states=30
+mlp_bS1_8x8 : PASS : insn=495 processed=189436 states=1751
+mlp_bS1_16 : PASS : insn=338 processed=7139 states=80
+mlp_bS1_16x16 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+mlp_bS1_16x16x16 : PASS : insn=480 processed=57811 states=665
+mlp_bS1_32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS1_32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS1_32x32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS1_64x64x64x64 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS2_2 : PASS : insn=224 processed=382 states=14
+mlp_bS2_2x2 : PASS : insn=241 processed=441 states=21
+mlp_bS2_4 : PASS : insn=323 processed=1464 states=35
+mlp_bS2_4x4 : PASS : insn=363 processed=1512 states=33
+mlp_bS2_8 : PASS : insn=419 processed=2652 states=30
+mlp_bS2_8x8 : PASS : insn=495 processed=189438 states=1751
+mlp_bS2_16 : PASS : insn=338 processed=7139 states=80
+mlp_bS2_16x16 : PASS : insn=409 processed=28826 states=329
+mlp_bS2_16x16x16 : PASS : insn=480 processed=52917 states=612
+mlp_bS2_32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS2_32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS2_32x32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS2_64x64x64x64 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS3_2 : PASS : insn=224 processed=382 states=14
+mlp_bS3_2x2 : PASS : insn=241 processed=440 states=21
+mlp_bS3_4 : PASS : insn=323 processed=1464 states=35
+mlp_bS3_4x4 : PASS : insn=364 processed=1414 states=29
+mlp_bS3_8 : PASS : insn=419 processed=2652 states=30
+mlp_bS3_8x8 : PASS : insn=495 processed=188247 states=1739
+mlp_bS3_16 : PASS : insn=338 processed=7139 states=80
+mlp_bS3_16x16 : PASS : insn=409 processed=23063 states=265
+mlp_bS3_16x16x16 : PASS : insn=480 processed=54050 states=622
+mlp_bS3_32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS3_32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS3_32x32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_bS3_64x64x64x64 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS1_2 : PASS : insn=224 processed=382 states=14
+mlp_cS1_2x2 : PASS : insn=241 processed=440 states=21
+mlp_cS1_4 : PASS : insn=323 processed=1464 states=35
+mlp_cS1_4x4 : PASS : insn=363 processed=1513 states=33
+mlp_cS1_8 : PASS : insn=415 processed=2821 states=38
+mlp_cS1_8x8 : PASS : insn=495 processed=189353 states=1752
+mlp_cS1_16 : PASS : insn=338 processed=7139 states=80
+mlp_cS1_16x16 : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn
+mlp_cS1_16x16x16 : PASS : insn=480 processed=42259 states=474
+mlp_cS1_32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS1_32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS1_32x32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS1_64x64x64x64 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS2_2 : PASS : insn=224 processed=382 states=14
+mlp_cS2_2x2 : PASS : insn=241 processed=440 states=21
+mlp_cS2_4 : PASS : insn=323 processed=1464 states=35
+mlp_cS2_4x4 : PASS : insn=363 processed=1513 states=33
+mlp_cS2_8 : PASS : insn=419 processed=2652 states=30
+mlp_cS2_8x8 : PASS : insn=495 processed=189211 states=1751
+mlp_cS2_16 : PASS : insn=338 processed=7139 states=80
+mlp_cS2_16x16 : PASS : insn=409 processed=18982 states=216
+mlp_cS2_16x16x16 : PASS : insn=480 processed=53772 states=622
+mlp_cS2_32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS2_32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS2_32x32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS2_64x64x64x64 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS3_2 : PASS : insn=224 processed=382 states=14
+mlp_cS3_2x2 : PASS : insn=241 processed=440 states=21
+mlp_cS3_4 : PASS : insn=323 processed=1464 states=35
+mlp_cS3_4x4 : PASS : insn=363 processed=1513 states=33
+mlp_cS3_8 : PASS : insn=419 processed=2652 states=30
+mlp_cS3_8x8 : PASS : insn=495 processed=189363 states=1753
+mlp_cS3_16 : PASS : insn=338 processed=7139 states=80
+mlp_cS3_16x16 : PASS : insn=409 processed=25802 states=297
+mlp_cS3_16x16x16 : PASS : insn=480 processed=53461 states=619
+mlp_cS3_32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS3_32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS3_32x32x32x32 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_cS3_64x64x64x64 : COMPILE_FAIL : error: Looks like the BPF stack limit is exceeded. Please move large on stack variables into BPF per-cpu array map. For non-kernel uses, the stack can be increased using -mllvm -bpf-stack-size. at=/home/fxz/run4/xdp_model_stub.c;90;5
+mlp_final : VERIFIER_FAIL : state-explosion processed=1000001 why=BPF program is too large. Processed 1000001 insn

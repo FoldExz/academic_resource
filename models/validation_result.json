@@ -1,0 +1,6 @@
+{
+  "agreement_rate": 1.0,
+  "threshold": 0.95,
+  "go": true,
+  "n_samples": 34995
+}

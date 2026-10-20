@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C / Object files
+*.o
+*.obj
+*.so
+*.dylib
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Testing & IDE caches
+.pytest_cache/
+.vscode/
+.idea/
+
+# Large PCAP Raw Capture Files (exceeds GitHub 100MB limit)
+# The pipeline reads ./pcap or path specified via PCAP_DIR environment variable
+*.pcap
+*.pcapng
+*.pcap.labels
+pcap
+pcap/
+
+# Archives
+*.zip
+*.tar.gz

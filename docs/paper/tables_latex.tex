@@ -1,0 +1,53 @@
+% LaTeX Tables for International Conference / Journal Paper
+% Compatible with IEEEtran and ACM SIGCONF templates
+
+% Table 1: Overall Performance on Locked Outer-Test Set (N = 34,995 1s Windows)
+\begin{table*}[t]
+\centering
+\caption{Classification Performance and In-Kernel Verifier Status on Locked Outer-Test Set ($N = 34,995$)}
+\label{tab:overall_performance}
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Model Architecture} & \textbf{Configuration} & \textbf{Macro Recall} & \textbf{Macro F1} & \textbf{MC Accuracy} & \textbf{ADR} & \textbf{FPR} & \textbf{eBPF Verifier} \\
+\midrule
+\textbf{Decision Tree (DT)} & depth 6, $b\text{-}S1$ & \textbf{99.9975\%} & \textbf{99.9953\%} & \textbf{99.9914\%} & \textbf{100.0000\%} & 0.0149\% & \textbf{PASS (O2 \& O3)} \\
+\textbf{Random Forest (RF)} & depth 8, $n=3$, $c\text{-}S2$ & 99.7855\% & 99.8870\% & 99.9829\% & 99.9865\% & 0.0199\% & \textbf{PASS (O2 \& O3)} \\
+\textbf{Quantized MLP}      & $1\times 16$ neurons, Q14 & 99.5777\% & 99.7857\% & 99.9886\% & 99.9731\% & \textbf{0.0000\%} & \textbf{PASS (O2 \& O3)} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% Table 2: Per-Class Detection Recall Breakdown
+\begin{table}[t]
+\centering
+\caption{Per-Class Detection Recall Breakdown across DDoS Vectors}
+\label{tab:per_class_recall}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Traffic Class} & \textbf{Test Windows} & \textbf{DT Recall} & \textbf{RF Recall} & \textbf{MLP Recall} \\
+\midrule
+Normal (Benign)        & 20,131 & 99.9851\% & 99.9801\% & \textbf{100.0000\%} \\
+ARP Flood              & 5,618  & \textbf{100.0000\%} & 99.9822\% & 99.9822\% \\
+ICMP Flood             & 4,874  & \textbf{100.0000\%} & \textbf{100.0000\%} & \textbf{100.0000\%} \\
+TCP SYN Flood          & 1,772  & \textbf{100.0000\%} & \textbf{100.0000\%} & 99.8871\% \\
+UDP Flood              & 1,607  & \textbf{100.0000\%} & 99.9378\% & 99.8133\% \\
+DNS Amplification      & 993    & \textbf{100.0000\%} & 99.8993\% & 99.6979\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 3: In-Kernel Verification & Instruction Footprint
+\begin{table}[t]
+\centering
+\caption{In-Kernel Bytecode Footprint and Verifier Inspection Complexity}
+\label{tab:kernel_footprint}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{Bytecode Insns} & \textbf{Processed Insns} & \textbf{Stack (Bytes)} & \textbf{Verifier Status} \\
+\midrule
+Decision Tree  & 102 & 403   & 48  & PASS (O2 \& O3) \\
+Random Forest  & 204 & 5,152 & 64  & PASS (O2 \& O3) \\
+Quantized MLP  & 338 & 7,139 & 112 & PASS (O2 \& O3) \\
+\bottomrule
+\end{tabular}
+\end{table}

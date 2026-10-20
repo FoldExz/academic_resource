@@ -1,0 +1,4 @@
+Model,Config,Bytecode Insns,Processed Insns,Verifier States,O2 Verifier Status,O3 Verifier Status,Stack Usage (bytes),Header Size (bytes)
+Decision Tree,b-S1::d06 (max_depth=6),102,403,34,PASS,PASS,< 128,2473
+Random Forest,"c-S2::d8n3 (depth=8, trees=3)",204,5152,325,PASS,PASS,< 256,7866
+Quantized MLP,"a::16 (1x16 neurons, Q14)",338,7139,80,PASS,PASS,< 192,4578

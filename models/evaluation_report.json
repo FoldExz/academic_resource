@@ -1,0 +1,295 @@
+{
+  "protocol": "locked_temporal_outer_split_raw_no_quota_grouped_60s_cv",
+  "features": [
+    "packet_rate",
+    "byte_rate",
+    "arp_count",
+    "syn_count",
+    "udp_count",
+    "icmp_count",
+    "dns_count",
+    "avg_packet_size",
+    "unique_src_ip"
+  ],
+  "split_file": "data/split_locked_temporal.npz",
+  "selected_configs": {
+    "DT": "b-S1::d06",
+    "RF": "c-S2::d8n3",
+    "MLP": "a::16"
+  },
+  "models": {
+    "DT": {
+      "metrics": {
+        "accuracy_multiclass": 0.9999142734676383,
+        "precision": 0.9999309678310092,
+        "recall": 0.9999751762486347,
+        "f1": 0.999953063965784,
+        "accuracy_binary": 0.9999142734676383,
+        "fpr": 0.00014894250819183795,
+        "tnr": 0.9998510574918081,
+        "adr": 1.0,
+        "tp": 14853,
+        "tn": 20139,
+        "fp": 3,
+        "fn": 0
+      },
+      "per_class_recall": {
+        "Normal": 0.9998510574918081,
+        "ARP Flood": 1.0,
+        "ICMP Flood": 1.0,
+        "SYN Flood": 1.0,
+        "UDP Flood": 1.0,
+        "DNS Amplification": 1.0
+      },
+      "normal_fpr": 0.00014894250819183795,
+      "confusion_matrix": [
+        [
+          20139,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7240,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7120,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          145,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          227,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          121
+        ]
+      ]
+    },
+    "RF": {
+      "metrics": {
+        "accuracy_multiclass": 0.9998285469352765,
+        "precision": 0.9998914190031093,
+        "recall": 0.9978552768059247,
+        "f1": 0.9988696666966571,
+        "accuracy_binary": 0.9998285469352765,
+        "fpr": 0.0001985900109224506,
+        "tnr": 0.9998014099890775,
+        "adr": 0.9998653470679324,
+        "tp": 14851,
+        "tn": 20138,
+        "fp": 4,
+        "fn": 2
+      },
+      "per_class_recall": {
+        "Normal": 0.9998014099890775,
+        "ARP Flood": 1.0,
+        "ICMP Flood": 1.0,
+        "SYN Flood": 1.0,
+        "UDP Flood": 0.9955947136563876,
+        "DNS Amplification": 0.9917355371900827
+      },
+      "normal_fpr": 0.0001985900109224506,
+      "confusion_matrix": [
+        [
+          20138,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7240,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7120,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          145,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          226,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          120
+        ]
+      ]
+    },
+    "MLP": {
+      "metrics": {
+        "accuracy_multiclass": 0.999885697956851,
+        "precision": 0.9999669082365399,
+        "recall": 0.995776750282157,
+        "f1": 0.9978571004597772,
+        "accuracy_binary": 0.999885697956851,
+        "fpr": 0.0,
+        "tnr": 1.0,
+        "adr": 0.9997306941358648,
+        "tp": 14849,
+        "tn": 20142,
+        "fp": 0,
+        "fn": 4
+      },
+      "per_class_recall": {
+        "Normal": 1.0,
+        "ARP Flood": 1.0,
+        "ICMP Flood": 1.0,
+        "SYN Flood": 1.0,
+        "UDP Flood": 0.9911894273127754,
+        "DNS Amplification": 0.9834710743801653
+      },
+      "normal_fpr": 0.0,
+      "confusion_matrix": [
+        [
+          20142,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7240,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7120,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          145,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          225,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          119
+        ]
+      ]
+    }
+  },
+  "header_files": {
+    "DT": "models/dt_final.h",
+    "RF": "models/rf_final.h",
+    "MLP": "models/mlp_final.h"
+  },
+  "note": "Constrained selection \u2014 best macro_recall CV that PASS eBPF verifier (O2 & O3)",
+  "DT": {
+    "accuracy_multiclass": 0.9999142734676383,
+    "precision": 0.9999309678310092,
+    "recall": 0.9999751762486347,
+    "f1": 0.999953063965784,
+    "accuracy_binary": 0.9999142734676383,
+    "fpr": 0.00014894250819183795,
+    "tnr": 0.9998510574918081,
+    "adr": 1.0,
+    "tp": 14853,
+    "tn": 20139,
+    "fp": 3,
+    "fn": 0
+  },
+  "RF": {
+    "accuracy_multiclass": 0.9998285469352765,
+    "precision": 0.9998914190031093,
+    "recall": 0.9978552768059247,
+    "f1": 0.9988696666966571,
+    "accuracy_binary": 0.9998285469352765,
+    "fpr": 0.0001985900109224506,
+    "tnr": 0.9998014099890775,
+    "adr": 0.9998653470679324,
+    "tp": 14851,
+    "tn": 20138,
+    "fp": 4,
+    "fn": 2
+  },
+  "MLP": {
+    "accuracy_multiclass": 0.999885697956851,
+    "precision": 0.9999669082365399,
+    "recall": 0.995776750282157,
+    "f1": 0.9978571004597772,
+    "accuracy_binary": 0.999885697956851,
+    "fpr": 0.0,
+    "tnr": 1.0,
+    "adr": 0.9997306941358648,
+    "tp": 14849,
+    "tn": 20142,
+    "fp": 0,
+    "fn": 4
+  }
+}
